@@ -1,0 +1,6 @@
+.DS_Store
+.build/
+
+Model/*.mlmodelc/
+Model/*.mlpackage/
+Model/*.zip

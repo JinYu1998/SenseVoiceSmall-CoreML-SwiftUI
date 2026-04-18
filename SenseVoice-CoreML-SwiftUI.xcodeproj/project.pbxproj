@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE097ACA2F7FAE7A004FB32D /* tokens.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE097AC92F7FAE7A004FB32D /* tokens.txt */; };
+		DE097AEC2F7FB60E004FB32D /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE097AEB2F7FB60E004FB32D /* test.wav */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DE097AA72F7FACF3004FB32D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		DE097A992F7FACF1004FB32D /* SenseVoice-CoreML-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SenseVoice-CoreML-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE097AA62F7FACF3004FB32D /* SenseVoice-CoreML-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SenseVoice-CoreML-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE097AB02F7FACF3004FB32D /* SenseVoice-CoreML-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SenseVoice-CoreML-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE097AC92F7FAE7A004FB32D /* tokens.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tokens.txt; sourceTree = "<group>"; };
+		DE097AEB2F7FB60E004FB32D /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +50,11 @@
 		DE097AB32F7FACF3004FB32D /* SenseVoice-CoreML-SwiftUIUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SenseVoice-CoreML-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		DE097AC42F7FAE03004FB32D /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +87,13 @@
 		DE097A902F7FACF1004FB32D = {
 			isa = PBXGroup;
 			children = (
+				DE097AC42F7FAE03004FB32D /* Model */,
 				DE097A9B2F7FACF1004FB32D /* SenseVoice-CoreML-SwiftUI */,
 				DE097AA92F7FACF3004FB32D /* SenseVoice-CoreML-SwiftUITests */,
 				DE097AB32F7FACF3004FB32D /* SenseVoice-CoreML-SwiftUIUITests */,
 				DE097A9A2F7FACF1004FB32D /* Products */,
+				DE097AC92F7FAE7A004FB32D /* tokens.txt */,
+				DE097AEB2F7FB60E004FB32D /* test.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DE097A9B2F7FACF1004FB32D /* SenseVoice-CoreML-SwiftUI */,
+				DE097AC42F7FAE03004FB32D /* Model */,
 			);
 			name = "SenseVoice-CoreML-SwiftUI";
 			packageProductDependencies = (
@@ -170,6 +186,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
@@ -195,6 +214,8 @@
 			);
 			mainGroup = DE097A902F7FACF1004FB32D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DE097A9A2F7FACF1004FB32D /* Products */;
 			projectDirPath = "";
@@ -212,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE097AEC2F7FB60E004FB32D /* test.wav in Resources */,
+				DE097ACA2F7FAE7A004FB32D /* tokens.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +423,7 @@
 				DEVELOPMENT_TEAM = 63U4C479J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要麦克风权限以进行语音转文字识别";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +456,7 @@
 				DEVELOPMENT_TEAM = 63U4C479J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要麦克风权限以进行语音转文字识别";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +603,7 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
 	};
 	rootObject = DE097A912F7FACF1004FB32D /* Project object */;
 }
