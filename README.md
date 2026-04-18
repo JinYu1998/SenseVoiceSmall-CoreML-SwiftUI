@@ -29,26 +29,11 @@
 sh scripts/download_model.sh
 ```
 
-这个脚本会尝试把 Hugging Face 仓库 `Mor1998/SenseVoiceSmall300` 的内容下载到当前项目的 `Model/` 文件夹下。
-如果 Hugging Face 仓库里保存的是 `.mlmodelc` 包内部文件，脚本也会自动把它们整理成：
+这个脚本会尝试把 Hugging Face 仓库 `Mor1998/SenseVoiceSmall300` 的内容下载到当前项目的 `scripts/` 文件夹下。
 
-```bash
-Model/SenseVoiceSmall300.mlmodelc
-```
+下载完成后，项目里应当至少能在 `scripts/` 下看到 `SenseVoiceSmall300.mlmodelc`。
 
-如果你的本机还没有安装 Hugging Face CLI，可以先安装：
-
-```bash
-pip install -U "huggingface_hub[cli]"
-```
-
-然后再执行：
-
-```bash
-hf download Mor1998/SenseVoiceSmall300 --local-dir Model
-```
-
-下载完成后，项目里应当至少能在 `Model/` 下看到 `SenseVoiceSmall300.mlmodelc`。
+之后手动拖拽 `SenseVoiceSmall300.mlmodelc` 到 `Model` 文件夹下
 
 ## 当前代码结构
 
